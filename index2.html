@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+
+    }
+    .gender,.hobbies {
+      display: flex;
+
+      align-items: center;
+    }
+    button {
+      background-color: blueviolet;
+    }
+    .two {
+      display: flex;
+    }
+    .two input {
+      margin-right: 50px;
+    }
+    .two label {
+      margin-right: 20px;
+    }
+    
+    input[type="range"]::-webkit-slider-runnable-track {
+      
+      background: transparent; /* Colors defined in parent */
+      border-radius: 5px;
+    }
+    input[type="range"]::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      appearance: none;
+      background:skyblue;
+    }
+    button{
+      background-color: skyblue;
+      padding: 7px;
+    }
+  </style>
+  <body>
+    
+    <form action="">
+      <h2>Registration Form</h2>
+      <label for="name">Name</label>
+      <input type="text" id="name" required placeholder="Enter your name">
+      <label for="email">Email</label>
+      <input type="email" id="email" required placeholder="Enter your email">
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required placeholder="Enter your password">
+      <label for="age"> Age</label>
+      <input
+        type="number"
+        id="age"
+        required placeholder="Enter your age"
+      >
+      <label for="date"> Date of Birth</label>
+      <input
+        type="date"
+        id="date"
+        required
+      />
+      <p>Gender</p>
+      <div class="gender">
+        <input type="radio" id="male" name="fav_language" value="Male" />
+          <label for="male">Male</label><br />
+         
+        <input type="radio" id="female" name="fav_language" value="Female" />  
+        <label for="female">Female</label><br />
+         
+        <input
+          type="radio"
+          id="prefer"
+          name="fav_language"
+          value="Prefer not to say"
+        />
+          <label for="prefer">Prefer not to say</label>
+      </div>
+      <p>Hobbies</p>
+      <div class="hobbies">
+        <input type="radio" id="reading" name="fav_language1" value="Reading" />
+         <label for="reading">Reading</label><br />
+         
+        <input type="radio" id="travelling" name="fav_language1" value="Travelling" />  
+        <label for="travelling">Travelling</label><br />
+         
+        <input type="radio" name="fav_language1" value="Sports" id="sports"/>
+          <label for="sports">Sports</label>
+      </div>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="azerbaijan">Azerbaijan</option>
+        <option value="turkey">Turkey</option>
+        <option value="israel">Israel</option>
+        <option value="iran">Iran</option>
+      </select>
+      <label for="feedback">Feedback</label>
+      <textarea
+        type="date"
+        id="date"
+        required="Write your feedback"
+      ></textarea>
+      <label for="level">Satisfaction Level</label>
+      <input
+        type="range"
+        id="level"
+        min="0" max="50"
+      />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
